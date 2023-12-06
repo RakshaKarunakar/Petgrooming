@@ -1,0 +1,144 @@
+/*Headerdesign*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-height: 100px;
+  background-color: rgb(247, 228, 145);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  left: 0;
+  width: 100%;
+  top: 0px;
+  overflow: hidden;
+  transition: max-height 0.3s, background-color 0.3s;
+  z-index: 10;
+}
+
+header.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header.bg-white {
+  background-color: white;
+}
+
+/* Logo styles */
+.logo {
+  margin: 10px 100px 10px 100px;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+}
+
+/* Nav styles */
+.nav {
+  width: fit-content;
+  display: flex;
+  margin: 30px 10px 30px 10px;
+}
+
+/* Navigation styles */
+.navigation {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+/* Anchor (link) styles */
+.navigation-link {
+  text-transform: capitalize;
+  color: inherit;
+  transition: color 0.5s;
+}
+
+.spaced-text {
+  margin: 10px 20px 10px 20px;
+  color: #ff0000;
+}
+
+.navigation-link:hover {
+  color: orange;
+}
+
+/* Program styles */
+.program {
+  /* display: flex; */
+  gap: 5px;
+  align-items: baseline;
+  justify-content: flex-end;
+  margin: 20px 100px 20px 10px;
+  width: 400px;
+}
+
+/* Phone icon styles */
+.phone-icon {
+  width: 30px;
+  height: 18px;
+}
+
+/* Phone number styles */
+.phone-number {
+  font-size: 15px;
+  color: #007acc;
+  font-weight: 800;
+}
+
+/* Opening hours styles (desktop) */
+.opening-hours-desktop {
+  display: none;
+  font-size: 15px;
+  color: #f85215;
+  font-weight: 800;
+}
+
+.opening-hours-desktop.lg {
+  display: none;
+  font-size: 15px;
+  color: #f85215;
+  font-weight: 800;
+}
+
+.opening-contact-desktop{
+  font-size: 15px;
+  color: #f85215;
+  font-weight: 800;
+  margin-left: -10px;
+}
+
+.opening-contact-desktop.lg {
+  font-size: 15px;
+  color: #f85215;
+  font-weight: 800;
+  margin-left: -10px;
+}
+
+/* Opening hours styles (mobile) */
+.opening-hours-mobile {
+  display: block;
+  color: #007acc;
+}
+
+.opening-hours-mobile.lg {
+  display: none;
+  text-align: right;
+}
+
+/* Mobile nav button styles */
+.mobile-nav-button {
+  cursor: pointer;
+  margin: 20px 20px 20px 20px;
+}
+
+/* Mobile nav styles */
+.mobile-nav {
+  max-height: 100px;
+  background-color: rgb(242, 242, 183);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  left: 0;
+  width: 100%;
+  top: 10px;
+  height: 100%;
+  overflow: hidden;
+  transition: max-height 0.3s;
+}

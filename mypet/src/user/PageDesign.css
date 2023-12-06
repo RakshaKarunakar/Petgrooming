@@ -1,0 +1,387 @@
+/*UserHeaderdesign*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(251, 196, 93);
+  height: 100%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  left: 0;
+  width: 100%;
+  top: 0px;
+  overflow: hidden;
+  transition: max-height 0.3s, background-color 0.3s;
+  z-index: 10;
+}
+
+.header.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100px; /* Adjusted to max-width for better responsiveness */
+  margin: 10px auto; /* Center the content */
+  height: 100%;
+  align-items: center; /* Center items vertically */
+}
+
+.header.bg-white {
+  background-color: white;
+}
+
+/* Logo styles */
+.logo {
+  width: 20px;
+  height: 20px;
+  align-items: center;
+}
+
+/* Navigation styles */
+.nav {
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 500px;
+  width: 1000px;
+}
+
+/* Navigation styles */
+.navigation {
+  display: inline;
+  font-size: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Anchor (link) styles */
+.navigation-link {
+  margin: 0 15px; /* Adjust spacing */
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.5s;
+  text-decoration: none;
+  }
+
+.spaced-text {
+  margin: 10px 30px 10px 30px;
+  color: #ff0000;
+  font-size:large;
+}
+
+.navigation-link:hover {
+  color: orange;
+}
+
+/* User profile styles */
+.Userprofile {
+  margin: 10px 50px;
+}
+
+/* Mobile nav button styles */
+.mobile-nav-button {
+  display: none; /* Initially hide for larger screens */
+  cursor: pointer;
+  margin: 10px 10px;
+}
+
+/* Mobile nav styles */
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  background-color: rgb(242, 242, 183);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  left: 0;
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+  transition: max-height 0.3s;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 800px) {
+  .nav {
+    display: none; /* Hide the desktop navigation on smaller screens */
+  }
+
+  .mobile-nav-button {
+    display: block; /* Show the mobile nav button on smaller screens */
+  }
+
+  .mobile-nav {
+    display: flex; /* Show the mobile nav on smaller screens */
+  }
+}
+
+
+/*___PageDesign__-------------------------------------------------------------------------------------------------------------------------*/
+
+.container {
+  justify-content: space-between;
+  height: 450px;
+  min-width: 1400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  padding: 10px;
+  /* background-color: #baba90;  */
+}
+
+.container::after {
+  content: "";
+  position: absolute;
+  background-color: #fec04c;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  right: -10px;
+  transform-style: flat;
+  margin-top: 40px;
+  z-index: -1;
+}
+
+
+.btn {
+  color: #f5f4f3;
+  border-color: rgb(93, 93, 93);
+  background-color: orange;
+  ;
+  width: 300px;
+  height: 40px;
+}
+
+/* PricesSection.css */
+
+.prices-section {
+  padding: 20px 0;
+}
+
+.pricecontainer {
+  /* max-width: 90%; */
+  margin: 0 auto;
+  min-width: 1000px;
+}
+
+.pricetext-orange {
+  color: orange;
+}
+
+.pricetext-center {
+  text-align: center;
+}
+
+.grid-container {
+  min-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 0px 40px;
+  padding: auto;
+  /* background-color: #3182ce; */
+}
+
+.grid-item {
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+}
+
+.active {
+  border-bottom: 4px solid orange;
+}
+
+.image-container {
+  margin-bottom: 5px;
+}
+
+.image {
+  width: 80%;
+  max-width: 90%;
+}
+
+.bundleData-names {
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-bottom: 4px;
+  font-family: monospace;
+  color: #f85215;
+}
+
+.category-text {
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+
+/* Bundles.css */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  height: fit-content;
+  min-width: 1000px;
+  margin: 0px 20px 10px 20px;
+  /* background-color: #f85215; */
+}
+
+.bundle-item {
+  width: 300px;
+  min-width: 100px;
+  background-color: rgb(253, 252, 252);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.129);
+  text-align: center;
+  height: 260px;
+  border-radius: 50px;
+  padding: 20px 20px;
+  /* margin: 10px 0px 10px 30px ; */
+}
+
+.bundle-price {
+  font-size: 5xl;
+  font-weight: bold;
+  color: #3182ce;
+  margin-bottom: 4px;
+}
+
+.bundle-name {
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  color: #3182ce;
+  font-weight: medium;
+}
+
+.bundle-list {
+  display: flex;
+  flex-direction: column;
+  /* Change to column */
+  gap: 2px;
+  max-width: 300px;
+  flex-wrap: wrap;
+  font-size: medium;
+  align-items: flex-start;
+}
+
+.bundle-item .flex {
+  align-items: center;
+  gap: 3px;
+  margin-bottom: 2px;
+  /* Adjust the margin to create space between items */
+}
+
+.bundle-text {
+  color: #f85215;
+  font-size: 15px;
+}
+
+.price {
+  color: orange;
+  ;
+  font-size: xl;
+  margin-right: 5px;
+  /* Add margin to the right of the text */
+}
+
+
+
+/* Footer Section*/
+.bg-orange {
+  background-color: orange;
+  ;
+  ;
+  /* Adjust the color to your preference */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.footercontainer {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text {
+  color: #fff;
+  /* Adjust the color to your preference */
+  font-size: 15px;
+  margin-right: 100px;
+}
+
+/*Contact*/
+.bg-Contact {
+  background-color: #FFD700;
+  padding-top: 1.5rem;
+}
+
+.Contactcontainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.Contactflex {
+  margin-left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.Contactorder {
+  order: 0;
+  margin: 10px 50px;
+}
+
+.mb-Contact {
+  margin-bottom: 12px;
+}
+
+.Contactprice {
+  color: orange;
+  ;
+  font-weight: 600;
+  font-size: 2.25rem;
+  align-content: center;
+}
+
+.Contacttext-orange {
+  color: #f85215;
+  font-weight: 1000;
+  font-size: larger;
+  margin-bottom: 0.75rem;
+  align-content: center;
+}
+
+.Contacttext-blue {
+  color: #0000FF;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+  align-content: center;
+}
+
+.mb-7 {
+  margin-bottom: 10px;
+}
